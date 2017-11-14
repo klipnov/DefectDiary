@@ -141,7 +141,7 @@
                                     <constraint firstAttribute="height" constant="39" id="nhq-3r-Y59"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="IGb-4K-GbJ" kind="unwind" unwindAction="unwindToDemoProjectStatisticsWithSegue:" id="zC0-EH-K7y"/>
+                                    <segue destination="IGb-4K-GbJ" kind="unwind" animates="NO" unwindAction="unwindToDemoProjectStatisticsWithSegue:" id="zC0-EH-K7y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdt-oy-PAT">
@@ -343,10 +343,10 @@
             </objects>
             <point key="canvasLocation" x="3749.5999999999999" y="115.59220389805098"/>
         </scene>
-        <!--View Controller-->
+        <!--Defect Page One View Controller-->
         <scene sceneID="dCT-28-9Zy">
             <objects>
-                <viewController id="fuT-91-36z" sceneMemberID="viewController">
+                <viewController id="fuT-91-36z" customClass="DefectPageOneViewController" customModule="DefectDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rE3-fL-n0x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -371,6 +371,7 @@
                                     <constraint firstAttribute="width" constant="67" id="tGh-pR-sLx"/>
                                 </constraints>
                                 <connections>
+                                    <action selector="openActionSheet:" destination="24O-jL-hmP" eventType="touchUpInside" id="0Ke-4h-14d"/>
                                     <segue destination="84Y-Ie-wFx" kind="unwind" unwindAction="unwindToDemoProjectLevelOneWithSegue:" id="NNR-eP-cCx"/>
                                 </connections>
                             </button>
@@ -394,10 +395,21 @@
                                     <segue destination="V8h-6h-CtT" kind="show" animates="NO" id="eMb-5b-CAl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlS-Wp-kZa">
+                                <rect key="frame" x="317" y="0.0" width="58" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Owj-nx-kke"/>
+                                    <constraint firstAttribute="width" constant="58" id="teg-Lt-s3J"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="openActionSheet:" destination="fuT-91-36z" eventType="touchUpInside" id="1IE-gG-1cZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="mUV-kk-IW5" firstAttribute="bottom" secondItem="o7K-p5-Sx0" secondAttribute="bottom" constant="3" id="9TD-g6-dQz"/>
+                            <constraint firstItem="hlS-Wp-kZa" firstAttribute="trailing" secondItem="mUV-kk-IW5" secondAttribute="trailing" id="BIj-sZ-hrH"/>
                             <constraint firstItem="5oG-vs-L3j" firstAttribute="leading" secondItem="mUV-kk-IW5" secondAttribute="leading" id="CQs-u8-ohc"/>
                             <constraint firstItem="mUV-kk-IW5" firstAttribute="bottom" secondItem="h07-Gj-vrg" secondAttribute="bottom" constant="8" id="WrM-Eg-hJN"/>
                             <constraint firstItem="Upl-xE-yvc" firstAttribute="top" secondItem="rE3-fL-n0x" secondAttribute="top" id="cpu-ys-ywd"/>
@@ -407,6 +419,7 @@
                             <constraint firstItem="Upl-xE-yvc" firstAttribute="trailing" secondItem="mUV-kk-IW5" secondAttribute="trailing" id="lfB-Qn-i9B"/>
                             <constraint firstItem="h07-Gj-vrg" firstAttribute="leading" secondItem="mUV-kk-IW5" secondAttribute="leading" constant="109" id="nXV-0W-IIW"/>
                             <constraint firstItem="jkL-mR-rrf" firstAttribute="leading" secondItem="h07-Gj-vrg" secondAttribute="trailing" constant="48" id="qHR-8G-Emm"/>
+                            <constraint firstItem="hlS-Wp-kZa" firstAttribute="top" secondItem="rE3-fL-n0x" secondAttribute="top" id="rV2-Mz-Lt8"/>
                             <constraint firstItem="5oG-vs-L3j" firstAttribute="top" secondItem="rE3-fL-n0x" secondAttribute="top" id="tyI-uW-Hd8"/>
                             <constraint firstItem="mUV-kk-IW5" firstAttribute="bottom" secondItem="jkL-mR-rrf" secondAttribute="bottom" constant="8" id="zAc-NN-smR"/>
                         </constraints>
@@ -414,6 +427,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="608-V5-CON" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="24O-jL-hmP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4429.6000000000004" y="114.69265367316342"/>
         </scene>
@@ -688,9 +702,9 @@
         <image name="page8" width="781" height="1691"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6rL-Fy-nEj"/>
-        <segue reference="lVR-rO-jYL"/>
-        <segue reference="0ez-MH-nwe"/>
+        <segue reference="eMb-5b-CAl"/>
+        <segue reference="f7B-7O-3zD"/>
+        <segue reference="L4b-oa-Jnw"/>
         <segue reference="HJg-yd-Uoy"/>
     </inferredMetricsTieBreakers>
 </document>

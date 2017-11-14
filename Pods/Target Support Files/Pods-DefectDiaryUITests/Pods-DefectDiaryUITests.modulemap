@@ -1,0 +1,6 @@
+framework module Pods_DefectDiaryUITests {
+  umbrella header "Pods-DefectDiaryUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

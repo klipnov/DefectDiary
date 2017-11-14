@@ -20,6 +20,8 @@
 		E6D404AA1FBB37D1003C1AE9 /* DefectDiaryHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D404A91FBB37D1003C1AE9 /* DefectDiaryHomeViewController.swift */; };
 		E6D404AC1FBB3ACB003C1AE9 /* DemoProjectChooseLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D404AB1FBB3ACB003C1AE9 /* DemoProjectChooseLevelViewController.swift */; };
 		E6D404AE1FBB3C70003C1AE9 /* DemoProjectStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D404AD1FBB3C70003C1AE9 /* DemoProjectStatisticsViewController.swift */; };
+		E6D404B11FBB4133003C1AE9 /* ActionSheetOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D404B01FBB4133003C1AE9 /* ActionSheetOptions.swift */; };
+		E6D404B41FBB43F7003C1AE9 /* DefectPageOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D404B31FBB43F7003C1AE9 /* DefectPageOneViewController.swift */; };
 		EBB094B738172819DC5DDA77 /* Pods_DefectDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCA6ED9DB7628202EDA1F22 /* Pods_DefectDiary.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		E6D404A91FBB37D1003C1AE9 /* DefectDiaryHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectDiaryHomeViewController.swift; sourceTree = "<group>"; };
 		E6D404AB1FBB3ACB003C1AE9 /* DemoProjectChooseLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoProjectChooseLevelViewController.swift; sourceTree = "<group>"; };
 		E6D404AD1FBB3C70003C1AE9 /* DemoProjectStatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoProjectStatisticsViewController.swift; sourceTree = "<group>"; };
+		E6D404B01FBB4133003C1AE9 /* ActionSheetOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetOptions.swift; sourceTree = "<group>"; };
+		E6D404B31FBB43F7003C1AE9 /* DefectPageOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectPageOneViewController.swift; sourceTree = "<group>"; };
 		EBCA6ED9DB7628202EDA1F22 /* Pods_DefectDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DefectDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD32ECCAEE63F0CB6DB75DC /* Pods-DefectDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DefectDiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-DefectDiary/Pods-DefectDiary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +149,7 @@
 		E6AE48691FB9DBFB0010CBE1 /* DefectDiary */ = {
 			isa = PBXGroup;
 			children = (
+				E6D404AF1FBB4110003C1AE9 /* Objects */,
 				E6D404A61FBB2ED9003C1AE9 /* ViewControllers */,
 				E6AE486A1FB9DBFB0010CBE1 /* AppDelegate.swift */,
 				E6AE486C1FB9DBFB0010CBE1 /* ViewController.swift */,
@@ -177,12 +182,29 @@
 		E6D404A61FBB2ED9003C1AE9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E6D404B21FBB43D1003C1AE9 /* DefectPage */,
 				E6D404A71FBB2F27003C1AE9 /* DemoProjectLevelOneViewController.swift */,
 				E6D404A91FBB37D1003C1AE9 /* DefectDiaryHomeViewController.swift */,
 				E6D404AB1FBB3ACB003C1AE9 /* DemoProjectChooseLevelViewController.swift */,
 				E6D404AD1FBB3C70003C1AE9 /* DemoProjectStatisticsViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E6D404AF1FBB4110003C1AE9 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E6D404B01FBB4133003C1AE9 /* ActionSheetOptions.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		E6D404B21FBB43D1003C1AE9 /* DefectPage */ = {
+			isa = PBXGroup;
+			children = (
+				E6D404B31FBB43F7003C1AE9 /* DefectPageOneViewController.swift */,
+			);
+			path = DefectPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,9 +503,11 @@
 				E6D404AC1FBB3ACB003C1AE9 /* DemoProjectChooseLevelViewController.swift in Sources */,
 				E6D404A81FBB2F27003C1AE9 /* DemoProjectLevelOneViewController.swift in Sources */,
 				E6D404AE1FBB3C70003C1AE9 /* DemoProjectStatisticsViewController.swift in Sources */,
+				E6D404B11FBB4133003C1AE9 /* ActionSheetOptions.swift in Sources */,
 				E6AE486D1FB9DBFB0010CBE1 /* ViewController.swift in Sources */,
 				E6D404AA1FBB37D1003C1AE9 /* DefectDiaryHomeViewController.swift in Sources */,
 				E6AE486B1FB9DBFB0010CBE1 /* AppDelegate.swift in Sources */,
+				E6D404B41FBB43F7003C1AE9 /* DefectPageOneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
