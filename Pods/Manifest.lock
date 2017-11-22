@@ -1,12 +1,15 @@
 PODS:
+  - ALCameraViewController (3.0.2)
   - IQKeyboardManagerSwift (5.0.6)
 
 DEPENDENCIES:
+  - ALCameraViewController
   - IQKeyboardManagerSwift
 
 SPEC CHECKSUMS:
+  ALCameraViewController: 1edce3497633f0df138523645ed1228961ee2eab
   IQKeyboardManagerSwift: 02bfbb0dff71c66d0ab77d80d25dfce0c3717735
 
-PODFILE CHECKSUM: 2be8ca35ad9f4bb17ee296feba52416878955eed
+PODFILE CHECKSUM: 596db26401409d72385dfd722c1692d44206090a
 
 COCOAPODS: 1.3.1

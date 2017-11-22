@@ -22,6 +22,9 @@
 		E6D404AE1FBB3C70003C1AE9 /* DemoProjectStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D404AD1FBB3C70003C1AE9 /* DemoProjectStatisticsViewController.swift */; };
 		E6D404B11FBB4133003C1AE9 /* ActionSheetOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D404B01FBB4133003C1AE9 /* ActionSheetOptions.swift */; };
 		E6D404B41FBB43F7003C1AE9 /* DefectPageOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D404B31FBB43F7003C1AE9 /* DefectPageOneViewController.swift */; };
+		E6D52C5B1FBC75A600A26C5A /* ShowPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D52C5A1FBC75A600A26C5A /* ShowPDF.swift */; };
+		E6D52C5D1FBC779100A26C5A /* ticketexport.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E6D52C5C1FBC779100A26C5A /* ticketexport.pdf */; };
+		E6D52C5F1FBC7E1F00A26C5A /* CreateTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D52C5E1FBC7E1F00A26C5A /* CreateTicketViewController.swift */; };
 		EBB094B738172819DC5DDA77 /* Pods_DefectDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCA6ED9DB7628202EDA1F22 /* Pods_DefectDiary.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +72,9 @@
 		E6D404AD1FBB3C70003C1AE9 /* DemoProjectStatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoProjectStatisticsViewController.swift; sourceTree = "<group>"; };
 		E6D404B01FBB4133003C1AE9 /* ActionSheetOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetOptions.swift; sourceTree = "<group>"; };
 		E6D404B31FBB43F7003C1AE9 /* DefectPageOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectPageOneViewController.swift; sourceTree = "<group>"; };
+		E6D52C5A1FBC75A600A26C5A /* ShowPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPDF.swift; sourceTree = "<group>"; };
+		E6D52C5C1FBC779100A26C5A /* ticketexport.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ticketexport.pdf; sourceTree = "<group>"; };
+		E6D52C5E1FBC7E1F00A26C5A /* CreateTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketViewController.swift; sourceTree = "<group>"; };
 		EBCA6ED9DB7628202EDA1F22 /* Pods_DefectDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DefectDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD32ECCAEE63F0CB6DB75DC /* Pods-DefectDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DefectDiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-DefectDiary/Pods-DefectDiary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +162,7 @@
 				E6AE486E1FB9DBFB0010CBE1 /* Main.storyboard */,
 				E6AE48711FB9DBFB0010CBE1 /* Assets.xcassets */,
 				E6AE48731FB9DBFB0010CBE1 /* LaunchScreen.storyboard */,
+				E6D52C5C1FBC779100A26C5A /* ticketexport.pdf */,
 				E6AE48761FB9DBFB0010CBE1 /* Info.plist */,
 			);
 			path = DefectDiary;
@@ -187,6 +194,7 @@
 				E6D404A91FBB37D1003C1AE9 /* DefectDiaryHomeViewController.swift */,
 				E6D404AB1FBB3ACB003C1AE9 /* DemoProjectChooseLevelViewController.swift */,
 				E6D404AD1FBB3C70003C1AE9 /* DemoProjectStatisticsViewController.swift */,
+				E6D52C5E1FBC7E1F00A26C5A /* CreateTicketViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				E6D404B01FBB4133003C1AE9 /* ActionSheetOptions.swift */,
+				E6D52C5A1FBC75A600A26C5A /* ShowPDF.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -325,6 +334,7 @@
 			files = (
 				E6AE48751FB9DBFB0010CBE1 /* LaunchScreen.storyboard in Resources */,
 				E6AE48721FB9DBFB0010CBE1 /* Assets.xcassets in Resources */,
+				E6D52C5D1FBC779100A26C5A /* ticketexport.pdf in Resources */,
 				E6AE48701FB9DBFB0010CBE1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,10 +447,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DefectDiary/Pods-DefectDiary-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ALCameraViewController/ALCameraViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ALCameraViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,9 +514,11 @@
 			files = (
 				E6D404AC1FBB3ACB003C1AE9 /* DemoProjectChooseLevelViewController.swift in Sources */,
 				E6D404A81FBB2F27003C1AE9 /* DemoProjectLevelOneViewController.swift in Sources */,
+				E6D52C5F1FBC7E1F00A26C5A /* CreateTicketViewController.swift in Sources */,
 				E6D404AE1FBB3C70003C1AE9 /* DemoProjectStatisticsViewController.swift in Sources */,
 				E6D404B11FBB4133003C1AE9 /* ActionSheetOptions.swift in Sources */,
 				E6AE486D1FB9DBFB0010CBE1 /* ViewController.swift in Sources */,
+				E6D52C5B1FBC75A600A26C5A /* ShowPDF.swift in Sources */,
 				E6D404AA1FBB37D1003C1AE9 /* DefectDiaryHomeViewController.swift in Sources */,
 				E6AE486B1FB9DBFB0010CBE1 /* AppDelegate.swift in Sources */,
 				E6D404B41FBB43F7003C1AE9 /* DefectPageOneViewController.swift in Sources */,
@@ -675,10 +689,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9PU5D3SWK6;
+				DEVELOPMENT_TEAM = PWCQR4WGGQ;
 				INFOPLIST_FILE = DefectDiary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DefectDiary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.innovez.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -691,10 +706,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9PU5D3SWK6;
+				DEVELOPMENT_TEAM = PWCQR4WGGQ;
 				INFOPLIST_FILE = DefectDiary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DefectDiary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.innovez.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -7,6 +7,7 @@ target 'DefectDiary' do
 
   # Pods for DefectDiary
   pod 'IQKeyboardManagerSwift'
+  pod 'ALCameraViewController'
 
   target 'DefectDiaryTests' do
     inherit! :search_paths

@@ -26,7 +26,7 @@ class ActionSheetOptions {
         }
         
         let createPDFReportOfTicketAction = UIAlertAction(title: "Create PDF Report of ticket", style: .default) { (alert) in
-            
+            self.showPDF(viewController: viewController)
         }
         
         let showTicketProtocolAction = UIAlertAction(title: "Show Ticket Protocol", style: .default) { (alert) in
@@ -52,6 +52,11 @@ class ActionSheetOptions {
         viewController.present(alertController, animated: true) {
             
         }
+    }
+    
+    func showPDF(viewController: UIViewController) {
+        let showTicketPDF = ShowPDF()
+        showTicketPDF.show(viewController: viewController)
     }
     
 }

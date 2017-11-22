@@ -7,7 +7,25 @@
 		<key>DefectDiary.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E6AE48661FB9DBFB0010CBE1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E6AE487A1FB9DBFB0010CBE1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E6AE48851FB9DBFB0010CBE1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
